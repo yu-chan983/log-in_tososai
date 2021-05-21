@@ -1,10 +1,13 @@
-<form name="myform" onsubmit="return checkText()">
- <input type="password" name="PW">
- <input type="submit" value="ログイン3" />
+<script type="text/javascript"><!--
+function myEnter(){
+   myPassWord = prompt( "Tatsuya家へのパスワードを入力してください", "" );
+   if ( myPassWord != "" && myPassWord != null ){
+       location.href = myPassWord + ".htm";
+   }
+}
+// --></script>
+
+<form>
+ここは家族専用です→ 
+<input type="button" value="Tatsuya家へ入る" onclick="myEnter()">
 </form>
-<script>
- function checkText() {
-    //*****に、サイトのページ名を入れてください
-    window.location = "https://sites.google.com/view/*****;
- }
-</script>
